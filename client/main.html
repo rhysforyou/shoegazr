@@ -4,16 +4,7 @@
 </head>
 <body>
   <div class="container">
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="{{newestBookmarksPath}}">
-        shoegazr <i class="icon-bookmark"></i>
-      </a>
-      <ul class="nav pull-right">
-        <li>{{loginButtons}}</li>
-      </ul>
-    </div>
-  </div>
+  {{> header}}
   {{#if currentUser}}
     {{renderPage}}
   {{else}}
