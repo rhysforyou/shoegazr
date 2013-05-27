@@ -8,3 +8,10 @@
 .bookmark .title {
   font-weight: bold;
 }
+.bookmark .domain {
+  color: #999
+}
+
+.tag {
+  color: red;
+}

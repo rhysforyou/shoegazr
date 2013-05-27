@@ -1,3 +1,11 @@
+<template name="newestBookmarks">
+  {{> bookmarksList options}}
+</template>
+
+<template name="taggedBookmarks">
+  {{> bookmarksList options}}
+</template>
+
 <template name="bookmarksList">
   <section class="bookmarks">
     {{#each bookmarks}}

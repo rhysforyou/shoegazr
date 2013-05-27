@@ -1,7 +1,7 @@
 Meteor.Router.add({
-  '/': 'bookmarksList',
+  '/': 'newestBookmarks',
   '/tag/:tagName': {
-    to: 'tagPage',
+    to: 'taggedBookmarks',
     and: function(tagName) { Session.set('currentTagName', tagName) }
   }
 })
