@@ -1,3 +1,6 @@
 .masthead a.brand {
   color: #333;
 }
+.bookmark .title {
+  font-weight: bold;
+}
