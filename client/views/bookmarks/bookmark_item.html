@@ -4,6 +4,9 @@
       <span class="title"><a href="{{url}}">{{title}}</a></span>
       <span class="domain">{{domain}}</span>
     </header>
+    <section class="description">
+      {{#markdown}}{{description}}{{/markdown}}
+    </section>
     <footer>
       <div class="tags">
         {{#each tags}}

@@ -12,6 +12,10 @@
   color: #999
 }
 
+.bookmark .description p:last-child {
+  margin-bottom: 0;
+}
+
 .tag {
   color: red;
 }
