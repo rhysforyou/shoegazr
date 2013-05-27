@@ -9,3 +9,5 @@ preserve-inputs
 bootstrap
 router
 showdown
+accounts-ui-bootstrap-dropdown
+accounts-password

@@ -4,12 +4,16 @@
 </head>
 <body>
   <div class="container">
-  <div class="masthead">
-    <a class="brand" href="{{newestBookmarksPath}}">
-      <h1>shoegazr <i class="icon-bookmark"></i></h1>
-    </a>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="{{newestBookmarksPath}}">
+        shoegazr <i class="icon-bookmark"></i>
+      </a>
+      <ul class="nav pull-right">
+        <li>{{loginButtons}}</li>
+      </ul>
+    </div>
   </div>
-  <hr>
   {{renderPage}}
   </div>
 </body>
