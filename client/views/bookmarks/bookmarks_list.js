@@ -18,6 +18,6 @@ Template.taggedBookmarks.helpers({
 
 Template.bookmarksList.helpers({
   bookmarks: function() {
-    return Bookmarks.find(this.query, {sort: this.order})
+    return Bookmarks.find(_.extend(this.query, {userId: Meteor.userId()}), {sort: this.order})
   }
 })
