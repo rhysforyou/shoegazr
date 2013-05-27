@@ -1,6 +1,10 @@
 .masthead a.brand {
   color: #333;
 }
+
+.bookmark {
+  margin-bottom: 10px;
+}
 .bookmark .title {
   font-weight: bold;
 }

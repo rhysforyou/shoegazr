@@ -1,6 +1,15 @@
 <template name="bookmarkItem">
   <article class="bookmark">
-    <span class="title"><a href="{{url}}">{{title}}</a></span>
-    <span class="domain">{{domain}}</span>
+    <header>
+      <span class="title"><a href="{{url}}">{{title}}</a></span>
+      <span class="domain">{{domain}}</span>
+    </header>
+    <footer>
+      <div class="tags">
+        {{#each tags}}
+          <a href="#" class="tag">{{this}}</a>
+        {{/each}}
+      </div>
+    </footer>
   </article>
 </template>
