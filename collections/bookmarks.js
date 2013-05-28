@@ -22,3 +22,8 @@ Meteor.methods({
 
   }
 })
+
+Bookmarks.allow({
+  update: ownsDocument,
+  remove: ownsDocument
+})
