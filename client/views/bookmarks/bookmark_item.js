@@ -5,3 +5,9 @@ Template.bookmarkItem.helpers({
     return a.hostname
   }
 })
+Template.bookmarkItem.events({
+  'dblclick': function(event) {
+    event.preventDefault()
+    Meteor.Router.to('bookmarkEdit', this._id)
+  }
+})
