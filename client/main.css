@@ -16,6 +16,9 @@ body {
 .bookmark .description p:last-child {
   margin-bottom: 0;
 }
+.bookmark header i {
+  opacity: 0.525;
+}
 
 .tag {
   color: red;
