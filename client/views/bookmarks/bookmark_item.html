@@ -3,6 +3,7 @@
     <header>
       <span class="title"><a href="{{url}}">{{title}}</a></span>
       <span class="domain">{{domain}}</span>
+      {{#if hidden}}<i class="icon-lock"></i>{{/if}}
     </header>
     <section class="description">
       {{#markdown}}{{description}}{{/markdown}}

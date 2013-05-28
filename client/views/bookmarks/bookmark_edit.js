@@ -16,7 +16,8 @@ Template.bookmarkEdit.events({
       title: $(event.target).find('[name=title]').val(),
       url: $(event.target).find('[name=url]').val(),
       description: $(event.target).find('[name=description]').val(),
-      tags: $(event.target).find('[name=tags]').val().split(' ')
+      tags: $(event.target).find('[name=tags]').val().split(' '),
+      hidden: $(event.target).find('[name=hidden]').is(':checked')
     }
 
     Bookmarks.update(currentBookmarkId, {$set: bookmarkAttributes}, function(error) {
