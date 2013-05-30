@@ -3,6 +3,12 @@ body {
   padding-bottom: 40px;
 }
 
+.navbar .brand i {
+  vertical-align: baseline;
+  position: relative;
+  top: 1px;
+}
+
 .bookmark {
   margin-bottom: 10px;
 }
