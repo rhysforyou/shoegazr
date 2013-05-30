@@ -4,16 +4,19 @@
     <a class="brand" href="{{newestBookmarksPath}}">
       <i class="icon-bookmark"></i> shoegazr
     </a>
-    {{#if currentUser}}
     <ul class="nav">
+      {{#if currentUser}}
       <li class="{{activeRouteClass 'newestBookmarks'}}">
         <a href="{{newestBookmarksPath}}">Bookmarks</a>
       </li>
       <li class="{{activeRouteClass 'bookmarkAdd'}}">
         <a href="{{bookmarkAddPath}}">Add Bookmark</a>
       </li>
+      {{/if}}
+      <li class="{{activeRouteClass 'publicBookmarks'}}">
+        <a href="{{publicBookmarksPath}}">Public</a>
+      </li>
     </ul>
-    {{/if}}
     <ul class="nav pull-right">
       <li>{{loginButtons}}</li>
     </ul>
