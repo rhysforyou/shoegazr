@@ -1,7 +1,7 @@
 Template.newestBookmarks.helpers({
   options: function() {
     return {
-      order: {},
+      order: {createdAt: -1},
       query: {userId: Meteor.userId()}
     }
   }
@@ -10,7 +10,7 @@ Template.newestBookmarks.helpers({
 Template.taggedBookmarks.helpers({
   options: function() {
     return {
-      order: {},
+      order: {createdAt: -1},
       query: {tags: Session.get('currentTagName'), userId: Meteor.userId()}
     }
   }
@@ -19,7 +19,7 @@ Template.taggedBookmarks.helpers({
 Template.publicBookmarks.helpers({
   options: function() {
     return {
-      order: {},
+      order: {createdAt: -1},
       query: {hidden: false}
     }
   }
